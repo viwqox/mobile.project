@@ -1,0 +1,71 @@
+header { 
+    width: 100vw; 
+    display: flex; 
+    justify-content: center; 
+} 
+ 
+.header { 
+    padding: 12px 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+ 
+    &-logo{ 
+        display: flex; 
+        align-items: center; 
+        column-gap: 12px; 
+ 
+        &__image { 
+            width: 28px; 
+            height: 36px; 
+        } 
+ 
+        &__text { 
+            font-size: 18px; 
+            font-weight: 700; 
+            color: $primary-black; 
+        } 
+    } 
+ 
+    &-links{ 
+    display: flex; 
+    align-items: center;  
+    column-gap: 16px; 
+    } 
+ 
+    &-link{ 
+    color: $primary-black; 
+    font-weight: 500; 
+    text-decoration: none; 
+    transition: 0.3s all; 
+ 
+    &:hover{ 
+        text-decoration: underline; 
+        color: $primary-neutral; 
+    } 
+ 
+    &:is(.contactme) { 
+    font-weight: 900; 
+    } 
+    } 
+ 
+    &-action{ 
+        background-color: $primary-black; 
+        border-radius: 8px; 
+        padding: 12px; 
+        display: flex; 
+        column-gap: 4px; 
+        align-items: center; 
+ 
+        &__text{ 
+            font-size: 16; 
+            font-weight: 700; 
+            color: $zinc-100; 
+        } 
+ 
+        &__svg{ 
+            width: 16px; 
+            height: 16px; 
+        } 
+    } 
+}
