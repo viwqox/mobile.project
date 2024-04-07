@@ -1,0 +1,40 @@
+.about {
+    &__wrapper {
+     display: flex;
+     column-gap: 50px;
+    }
+
+    &__img {
+
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        &-header {
+            display: flex;
+            column-gap: 100px;
+         }
+
+    h3 {
+        font-size: 36px;
+        
+            &:nth-child(even) {
+                font-weight: 900;
+            }
+       }
+           
+             }
+
+        &-content {
+            display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+            p {
+                color: #27272a;
+            }
+        }
+    }

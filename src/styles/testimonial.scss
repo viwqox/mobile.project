@@ -1,0 +1,60 @@
+.testimonial {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+
+        &>span {
+            font-weight: 700;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__card {
+
+        &:is(.black) {
+            background-color: $primary-black;
+        }
+
+        &:nth-child(even) {
+            * {
+                color: $primary-white;
+            }
+        }
+
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 12px;
+
+        &-text {
+            font-size: 14px;
+            color: $primary-neutral;
+            text-align: center;
+        }
+
+        &-name {
+            font-weight: 700;
+        }
+
+        &-profession {
+            font-weight: 600;
+            color: $zinc-400;
+        }
+    }
+}

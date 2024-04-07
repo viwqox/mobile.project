@@ -1,0 +1,53 @@
+.projects {
+
+    color: white;
+    background: $primary-black;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__cards {
+
+    }
+
+    &__card {
+
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+
+        &-number {
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        &-title {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        &-description {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 16px;
+        }
+    }
+}
