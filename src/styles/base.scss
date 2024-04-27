@@ -17,6 +17,10 @@ section {
     max-width: 1280px;
     width: 100%;
     margin: 0% auto;
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        padding: 0px 16px;
+        width: auto;
+    }
 }
 
 .primary-text {
@@ -27,9 +31,20 @@ section {
 h2 {
     font-size: 40px;
     font-weight: 500;
+    line-height: 130%;
 
     @media only screen and (min-width: $mobile) and (max-width: $tablet) {
         font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 130%;
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        font-size: 22px;
     }
 }
 
