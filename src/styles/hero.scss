@@ -4,22 +4,16 @@
         justify-content: space-between;
         column-gap: 24px;
         align-items: end;
-    }
 
-    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
-       flex-direction: column-reverse;
-       width: 90%;
-       height: 300px;
-       row-gap: 16px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: start;
         }
+    }
 
     &-action { 
     display: flex;
     column-gap: 24px;
-    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
-        column-gap: 16px;
-        margin-top: 0;  
-    }
 
         &__item {
         padding: 16px;
@@ -36,22 +30,20 @@
         & > svg path {
             fill: $primary-black;
         }
-
         
-            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
-                width: 36px;
-                height: 36px;
-            }
-        
-
         &:hover {
             background: $primary-black;
                 & > svg path {
                     fill: $primary-white;
                 }
             }
-        }
-        
+
+            @media screen and (max-width: 768px) {
+                width: 30px;
+                height: 30px;
+                padding: 12px;
+            }
+        }    
     }
 
     &-info {
@@ -81,45 +73,10 @@
     &-image {
         width: 700px;
         height: 500px;
+
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
     }
     
-}
-
-@media only screen and (min-width: $mobile) and (max-width: $tablet) {
-    .hero {
-        &-wrapper {
-            flex-direction: column-reverse;
-        }
-
-        &-image {
-            width: auto;
-            height: 225px;
-        }
-
-        &-title {
-            font-size: 25px;
-            line-height: 35px;
-        }
-
-        &-subtitle {
-            font-size: 15px;
-        }
-
-        &-action {
-
-            margin-top: 0;
-
-            &__item {
-                width: 20px;
-                height: 20px;
-                padding: 8px;
-            }
-        
-        }
-
-        &-info {
-            margin-top: 12px;
-            row-gap: 16px;
-        }
-    }
 }
